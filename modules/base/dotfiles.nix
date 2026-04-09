@@ -1,8 +1,6 @@
-{
-  config,
-  lib,
-  ...
-}: {
+{ self, inputs, ... }: {
+  flake.homeModules.dotfiles = { lib, config, ... }: {
+
   options.my = {
     dotfiles.enable = lib.mkEnableOption "dotfiles";
     dotfiles.path = lib.mkOption {
@@ -25,5 +23,7 @@
     xdg.configFile.kitty.source   = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/term/kitty";
     xdg.configFile.ghostty.source = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/term/ghostty";
     home.file.".vimrc".source     = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/.vimrc";
+  };
+
   };
 }
