@@ -3,6 +3,7 @@
     imports = [
       self.nixosModules.nixusHardware
       self.nixosModules.packages
+      self.nixosModules.networking
     ];
 
     # Define a user account. Don't forget to set a password with ‘passwd’.
