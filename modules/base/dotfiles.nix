@@ -1,9 +1,8 @@
 { self, inputs, ... }: {
   flake.homeModules.dotfiles = { lib, config, ... }: {
 
-  options.my = {
-    dotfiles.enable = lib.mkEnableOption "dotfiles";
-    dotfiles.path = lib.mkOption {
+  options = {
+    my.dotfiles.path = lib.mkOption {
       type = lib.types.path;
       default = "${config.home.homeDirectory}/dotfiles/";
       description = ''
@@ -11,7 +10,8 @@
       '';
     };
   };
-  config = lib.mkIf config.my.dotfiles.enable {
+  # TODO: convert to a list and a function, flatten dotfiles structure (get rid of term/)
+  config = {
     xdg.configFile.nvim.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/nvim";
     xdg.configFile.wlogout.source = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/wlogout";
     xdg.configFile.rofi.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/rofi";

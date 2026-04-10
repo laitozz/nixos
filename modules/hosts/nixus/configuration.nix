@@ -2,6 +2,7 @@
   flake.nixosModules.nixusConfiguration = { pkgs, lib, ... }: {
     imports = [
       self.nixosModules.nixusHardware
+      self.nixosModules.packages
     ];
 
     # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -12,42 +13,6 @@
       shell = pkgs.bash;
     };
 
-    environment.systemPackages = with pkgs; [
-      # TODO: DELETE THIS:
-      coreutils
-      libtool
-      gcc
-      git
-      vim
-      neovim
-      helix
-      gnumake
-      lazygit
-      tmux
-      fzf
-      zsh
-      iwd
-      nh
-
-      yazi
-      # rust 
-      ripgrep
-      fd
-      bat
-      eza
-      lsd
-      dust
-      dua
-      # nix
-      nix-index
-      nix-inspect
-      nix-fast-build
-
-      firefox
-      foot
-      kitty
-      pywal
-    ];
 
     programs.sway.enable = true;
 
