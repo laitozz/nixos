@@ -5,19 +5,9 @@
       den.provides.primary-user
       (den.provides.user-shell "zsh")
       den.aspects.dotfiles
+      den.aspects.git
     ];
     homeManager = { pkgs, ... }: {
-      # TODO: move this out of here
-      # ideally to a shell aspect
-      programs.gh.enable = true;
-      programs.git = {
-        enable = true;
-        settings = {
-          user.name = "Oiva Laitinen";
-          user.email = "oiva.laitinen2@gmail.com";
-          pull.rebase = "true";
-        };
-      };
     };
 
     # user can provide NixOS configurations
