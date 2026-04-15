@@ -23,8 +23,10 @@
     # user can provide NixOS configurations
     # to any host it is included on
     provides.to-hosts.nixos = { pkgs, ... }: {
-      # TODO: use the built-in user-class
-      users.users.lait.initialPassword = "ok";
+    };
+
+    provides.to-hosts.user = { pkgs, ... }: {
+      lait.initialPassword = "ok";
     };
   };
 }
