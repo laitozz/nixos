@@ -8,6 +8,16 @@
   # host<->user provides
   den.ctx.user.includes = [ den._.mutual-provider ];
 
+  # Home manager options
+  den.ctx.hm-host.includes = [
+    {
+      nixos.home-manager = {
+        backupFileExtension = "hm_backup";
+        useGlobalPkgs = true;
+      };
+    }
+  ];
+
   # Experimental features by default
   # TODO: find a better place for this
   den.default.nixos.nix.settings.experimental-features = lib.mkDefault [ "nix-command" "flakes" ];
