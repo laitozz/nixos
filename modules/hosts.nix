@@ -4,6 +4,8 @@
   # tux user at igloo host.
   den.hosts.x86_64-linux.igloo.users.tux = { };
 
+  den.hosts.x86_64-linux.fenix.users.lait = { };
+
   # define an standalone home-manager for tux
   # den.homes.x86_64-linux.tux = { };
 
