@@ -20,10 +20,10 @@
           xdg.configFile.hypr.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/hypr";
           xdg.configFile.wal.source     = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/wal";
           xdg.configFile.sway.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/sway";
-          xdg.configFile.tmux.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/term/tmux";
+          xdg.configFile.tmux.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/tmux";
           xdg.configFile.waybar.source  = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/waybar";
-          xdg.configFile.kitty.source   = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/term/kitty";
-          xdg.configFile.ghostty.source = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/term/ghostty";
+          xdg.configFile.kitty.source   = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/kitty";
+          xdg.configFile.ghostty.source = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/ghostty";
           home.file.".vimrc".source     = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/.vimrc";
         };
     };
