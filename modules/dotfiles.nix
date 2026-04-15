@@ -1,4 +1,4 @@
-{
+{ den, ... }: {
   den.aspects.dotfiles = { 
     homeManager = { lib, config, pkgs, ... }: { 
       

@@ -1,22 +1,19 @@
-{ den, ... }:
-{
+{ den, ... }: {
   # user aspect
   den.aspects.tux = {
     includes = [
       den.provides.define-user
       den.provides.primary-user
       (den.provides.user-shell "zsh")
-      den.aspects.dotfiles
     ];
 
-    homeManager =
-      { pkgs, ... }:
-      {
-        home.packages = [ pkgs.htop ];
-      };
+    homeManager = { pkgs, ... }: {
+      home.packages = [ pkgs.htop ];
+    };
 
     # user can provide NixOS configurations
     # to any host it is included on
-    provides.to-hosts.nixos = { pkgs, ... }: { };
+    provides.to-hosts.nixos = { pkgs, ... }: {
+    };
   };
 }
