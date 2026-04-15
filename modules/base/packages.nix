@@ -42,8 +42,5 @@
         nerd-fonts.fira-code
       ];
     };
-    homeManager = { pkgs, ... }: {
-      home.packages = [ pkgs.fastfetch ];
-    };
   };
 }

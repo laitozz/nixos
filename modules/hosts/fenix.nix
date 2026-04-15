@@ -8,7 +8,7 @@
 
     # host provides default home environment for its users
     provides.to-users.homeManager = { pkgs, ... }: {
-      home.packages = [ pkgs.vim ];
+      home.packages = [ ];
     };
 
     # host NixOS configuration

@@ -7,7 +7,6 @@
       den.aspects.dotfiles
     ];
     homeManager = { pkgs, ... }: {
-      home.packages = [ pkgs.htop ];
     };
 
     # user can provide NixOS configurations

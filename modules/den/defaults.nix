@@ -8,5 +8,7 @@
   # host<->user provides
   den.ctx.user.includes = [ den._.mutual-provider ];
 
-  den.default.nixos.nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  # Experimental features by default
+  # TODO: find a better place for this
+  den.default.nixos.nix.settings.experimental-features = lib.mkDefault [ "nix-command" "flakes" ];
 }
