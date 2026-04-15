@@ -3,7 +3,6 @@
     includes = [
       den.provides.define-user
       den.provides.primary-user
-      (den.provides.user-shell "zsh")
       den.aspects.dotfiles
       den.aspects.git
       den.aspects.fish
@@ -18,6 +17,7 @@
 
     provides.to-hosts.user = { pkgs, ... }: {
       lait.initialPassword = "ok";
+      lait.shell = pkgs.zsh;
     };
   };
 }

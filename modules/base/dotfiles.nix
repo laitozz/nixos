@@ -2,6 +2,7 @@
   den.aspects.dotfiles = { 
     homeManager = { lib, config, pkgs, ... }: { 
       
+      # TODO: do this the den way
       options = {
         my.dotfiles.path = lib.mkOption {
           type = lib.types.path;
@@ -25,6 +26,7 @@
           xdg.configFile.kitty.source   = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/kitty";
           xdg.configFile.ghostty.source = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/ghostty";
           home.file.".vimrc".source     = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/.vimrc";
+          home.file.".zshrc".source     = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/.zshrc";
         };
     };
   };

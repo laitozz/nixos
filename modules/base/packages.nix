@@ -13,7 +13,6 @@
         lazygit
         tmux
         fzf
-        zsh
         iwd
         nh
         yazi
@@ -30,6 +29,7 @@
         nix-inspect
         nix-fast-build
       ];
+      programs.zsh.enable = true;
 
       fonts.packages = with pkgs; [
         nerd-fonts.jetbrains-mono
