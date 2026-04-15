@@ -25,7 +25,6 @@
           xdg.configFile.kitty.source   = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/term/kitty";
           xdg.configFile.ghostty.source = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/term/ghostty";
           home.file.".vimrc".source     = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/.vimrc";
-          # home.file."zshconfig".source  = builtins.readFile "/home/tux/dotfiles/shell/zsh/.zshrc";
 
           home.packages = [ pkgs.cowsay ];
         };
