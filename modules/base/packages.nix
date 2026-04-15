@@ -30,11 +30,7 @@
         nix-index
         nix-inspect
         nix-fast-build
-
-        firefox
-        kitty
       ];
-      programs.sway.enable = true;
 
       fonts.packages = with pkgs; [
         nerd-fonts.jetbrains-mono
