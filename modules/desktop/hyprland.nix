@@ -11,7 +11,7 @@
         hyprpaper
         hyprlock
         wlogout
-        swww
+        awww
         grim
         slurp
       ];
