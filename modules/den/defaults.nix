@@ -8,6 +8,7 @@
   # host<->user provides
   den.ctx.user.includes = [ den._.mutual-provider ];
 
+  den.default.nixos.nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # User TODO: REMOVE THIS
   den.aspects.tux.nixos = {
     boot.loader.grub.enable = false;
