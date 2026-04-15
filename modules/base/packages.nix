@@ -14,7 +14,6 @@
         tmux
         fzf
         zsh
-        fish
         iwd
         nh
         yazi

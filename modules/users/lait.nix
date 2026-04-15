@@ -6,6 +6,7 @@
       (den.provides.user-shell "zsh")
       den.aspects.dotfiles
       den.aspects.git
+      den.aspects.fish
     ];
     homeManager = { pkgs, ... }: {
     };
