@@ -4,6 +4,7 @@
       den.provides.define-user
       den.provides.primary-user
       (den.provides.user-shell "zsh")
+      den.aspects.dotfiles
     ];
     homeManager = { pkgs, ... }: {
       home.packages = [ pkgs.htop ];

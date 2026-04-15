@@ -3,7 +3,6 @@
   den.aspects.fenix = {
     includes = [
       den.aspects.packages
-      den.aspects.dotfiles
     ];
     # host NixOS configuration
     nixos = { pkgs, ... }: {
