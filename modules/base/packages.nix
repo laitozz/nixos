@@ -8,20 +8,39 @@
         git
         vim
         neovim
-        # helix
-        # gnumake
-        # lazygit
-        # tmux
-        # fzf
-        # zsh
-        # iwd
-        # nh
-        # yazi
+        helix
+        gnumake
+        lazygit
+        tmux
+        fzf
+        zsh
+        fish
+        iwd
+        nh
+        yazi
+
+        ripgrep
+        fd
+        bat
+        eza
+        lsd
+        dust
+        dua
+
+        nix-index
+        nix-inspect
+        nix-fast-build
 
         firefox
         kitty
       ];
       programs.sway.enable = true;
+
+      fonts.packages = with pkgs; [
+        nerd-fonts.jetbrains-mono
+        nerd-fonts.iosevka
+        nerd-fonts.fira-code
+      ];
     };
     homeManager = { pkgs, ... }: {
       home.packages = [ pkgs.fastfetch ];
