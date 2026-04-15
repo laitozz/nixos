@@ -27,6 +27,7 @@
           xdg.configFile.ghostty.source = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/ghostty";
           home.file.".vimrc".source     = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/.vimrc";
           home.file.".zshrc".source     = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/.zshrc";
+          home.file.".profile".source   = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/.profile";
         };
     };
   };
