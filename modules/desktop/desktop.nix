@@ -7,6 +7,11 @@
       environment.systemPackages = with pkgs; [
         firefox
         kitty
+
+        wofi
+        rofi
+        fuzzel
+        tofi
       ];
       programs.sway.enable = true;
     };
