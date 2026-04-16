@@ -1,11 +1,11 @@
 { den, ... }: {
   # host aspect
   den.aspects.fenix = {
-    includes = [
-      den.aspects.packages
-      den.aspects.wifi
-      den.aspects.desktop
-    ];
+    # includes = [
+    #   den.aspects.packages
+    #   den.aspects.wifi
+    #   den.aspects.desktop
+    # ];
 
     # host provides default home environment for its users
     provides.to-users.homeManager = { pkgs, ... }: {

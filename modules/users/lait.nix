@@ -6,7 +6,21 @@
       den.aspects.dotfiles
       den.aspects.git
       den.aspects.fish
+      den.aspects.packages
+      den.aspects.desktop
     ];
+
+    # To every host that has user 'lait'
+    # Currently used for hardware config
+    provides.to-hosts.includes = [
+      den.aspects.wifi
+    ];
+
+    user = { pkgs, ... }: {
+      initialPassword = "ok";
+      shell = pkgs.fish;
+    };
+
     homeManager = { pkgs, ... }: {
     };
 
@@ -14,11 +28,6 @@
     # to any host it is included on
     provides.to-hosts.nixos = { pkgs, ... }: {
     };
-
     
-    user = { pkgs, ... }: {
-      initialPassword = "ok";
-      shell = pkgs.fish;
-    };
   };
 }
