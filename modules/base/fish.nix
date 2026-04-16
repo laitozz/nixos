@@ -1,5 +1,6 @@
 { den, ... }: {
   den.aspects.fish = {
+    nixos.programs.fish.enable = true; # needed for completions
     homeManager = { config, pkgs, lib, ... }: {
       programs.fish = {
         enable = true;

@@ -15,9 +15,10 @@
     provides.to-hosts.nixos = { pkgs, ... }: {
     };
 
-    provides.to-hosts.user = { pkgs, ... }: {
-      lait.initialPassword = "ok";
-      lait.shell = pkgs.zsh;
+    
+    user = { pkgs, ... }: {
+      initialPassword = "ok";
+      shell = pkgs.fish;
     };
   };
 }
