@@ -2,6 +2,7 @@
   den.aspects.desktop = {
     includes = [
       den.aspects.hyprland
+      den.aspects.noctalia
     ];
     nixos = { pkgs, ... }: {
       environment.systemPackages = with pkgs; [
