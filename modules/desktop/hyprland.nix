@@ -7,13 +7,14 @@
       };
       environment.systemPackages = with pkgs; [
         waybar
-        pyprland
         hyprpaper
         hyprlock
         wlogout
         awww
+        pywal
         grim
         slurp
+        mako
       ];
       # autostart Hyprland
       # TODO: figure out a less hacky way to do this

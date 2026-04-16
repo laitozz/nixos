@@ -18,6 +18,7 @@
           xdg.configFile.nvim.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/nvim";
           xdg.configFile.wlogout.source = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/wlogout";
           xdg.configFile.rofi.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/rofi";
+          xdg.configFile.tofi.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/tofi";
           xdg.configFile.hypr.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/hypr";
           xdg.configFile.wal.source     = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/wal";
           xdg.configFile.sway.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/sway";
