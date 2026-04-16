@@ -14,6 +14,8 @@
     # Currently used for hardware config
     provides.to-hosts.includes = [
       hw.wifi
+      hw.bluetooth
+      hw.power
     ];
 
     user = { pkgs, ... }: {
