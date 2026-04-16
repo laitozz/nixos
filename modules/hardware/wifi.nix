@@ -1,5 +1,5 @@
-{ den, ... }: {
-  den.aspects.wifi = {
+{ hw, ... }: {
+  hw.wifi = {
     nixos = { pkgs, ... }: {
       networking.wireless.iwd.enable = true;
 

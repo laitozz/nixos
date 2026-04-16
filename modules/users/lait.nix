@@ -1,4 +1,4 @@
-{ den, ... }: {
+{ den, hw, ... }: {
   den.aspects.lait = {
     includes = [
       den.provides.define-user
@@ -13,7 +13,7 @@
     # To every host that has user 'lait'
     # Currently used for hardware config
     provides.to-hosts.includes = [
-      den.aspects.wifi
+      hw.wifi
     ];
 
     user = { pkgs, ... }: {
