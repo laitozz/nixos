@@ -17,10 +17,9 @@
         mako
       ];
       # autostart Hyprland
-      # TODO: figure out a less hacky way to do this
-      environment.loginShellInit = ''
-        [[ "$(tty)" == /dev/tty1 ]] && exec Hyprland
-      '';
+      # environment.loginShellInit = ''
+      #   [[ "$(tty)" == /dev/tty1 ]] && exec start-hyprland
+      # '';
 
     };
   };

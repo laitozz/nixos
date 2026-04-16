@@ -3,6 +3,7 @@
     includes = [
       den.aspects.hyprland
       den.aspects.noctalia
+      den.aspects.greeter
     ];
     nixos = { pkgs, ... }: {
       environment.systemPackages = with pkgs; [
