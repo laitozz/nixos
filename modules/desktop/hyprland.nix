@@ -5,6 +5,7 @@
       programs.hyprland = {
         enable = true;
       };
+      # Packages useful with hyprland
       environment.systemPackages = with pkgs; [
         waybar
         hyprpaper
@@ -21,6 +22,10 @@
       #   [[ "$(tty)" == /dev/tty1 ]] && exec start-hyprland
       # '';
 
+      # Force apps to use wayland when possible
+      environment.sessionVariables = {
+        NIXOS_OZONE_WL = "1";
+      };
     };
   };
 }
