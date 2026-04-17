@@ -10,36 +10,21 @@
           dev = "nix develop";
           lazyvim = "NVIM_APPNAME=lazyvim nvim";
         };
-        # plugins = map 
-        #   (
-        #     name: {
-        #       name = "${name}";
-        #       src = pkgs.fishPlugins.${name}.src;
-        #     }
-        #   )
-        #   [
-        #     "tide"
-        #     "fzf"
-        #   ];
-        # TODO: fix the above / find a good place to store functions in den
-        plugins = [
-          {
-            name = "hydro";
-            src = pkgs.fishPlugins.hydro.src;
-          }
-          {
-            name = "fzf";
-            src = pkgs.fishPlugins.fzf.src;
-          }
-          {
-            name = "autopair";
-            src = pkgs.fishPlugins.autopair.src;
-          }
-          {
-            name = "z";
-            src = pkgs.fishPlugins.z.src;
-          }
-        ];
+        plugins = (
+          map 
+          (
+            name: {
+              name = "${name}";
+              src = pkgs.fishPlugins."${name}".src;
+            }
+          )
+          [
+            "hydro"
+            "fzf"
+            "autopair"
+            "z"
+          ]
+        );
         functions = {
           v = ''
             if set -q argv[1]
