@@ -19,6 +19,7 @@
 
         ripgrep
         fd
+        skim
         bat
         eza
         lsd
