@@ -16,6 +16,7 @@
       hw.wifi
       hw.bluetooth
       hw.power
+      hw.grub
     ];
 
     user = { pkgs, ... }: {
