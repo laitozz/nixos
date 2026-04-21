@@ -8,6 +8,7 @@
       hw.bluetooth
       hw.power
       hw.grub
+      hw.keyd
     ];
 
     # Hardware config 
