@@ -16,6 +16,10 @@
       imports = [
         (modulesPath + "/installer/scan/not-detected.nix")
       ];
+      
+      # Force unset grub timeout
+      # TODO: do this in the grub.nix file selectively
+      boot.loader.timeout = lib.mkForce null;
 
       boot.initrd.availableKernelModules = ["xhci_pci" "ahci" "nvme" "usb_storage" "usbhid" "sd_mod"];
       boot.initrd.kernelModules = [];
