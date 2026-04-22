@@ -1,9 +1,13 @@
-{ den, ... }: {
-  den.aspects.desktop = {
+{ sw, ... }: {
+  sw.desktop = {
     includes = [
-      den.aspects.hyprland
-      den.aspects.noctalia
-      den.aspects.greeter
+      sw.hyprland
+      sw.noctalia
+      sw.ly
+    ];
+    # Here goes a minimal sway-based config
+    provides.minimal.includes = [
+
     ];
     nixos = { pkgs, ... }: {
       environment.systemPackages = with pkgs; [

@@ -4,7 +4,7 @@
       den.provides.define-user
       den.provides.primary-user
       sw.base
-      den.aspects.desktop
+      sw.desktop
     ];
 
     # To every host that has user 'lait'

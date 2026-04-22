@@ -1,5 +1,5 @@
-{ den, ... }: {
-  den.aspects.hyprland = {
+{ sw, ... }: {
+  sw.hyprland = {
     nixos = { pkgs, ... }: {
 
       programs.hyprland = {
