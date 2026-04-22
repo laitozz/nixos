@@ -1,12 +1,9 @@
-{ den, hw, ... }: {
+{ den, hw, sw, ... }: {
   den.aspects.lait = {
     includes = [
       den.provides.define-user
       den.provides.primary-user
-      den.aspects.dotfiles
-      den.aspects.git
-      den.aspects.fish
-      den.aspects.packages
+      sw.base
       den.aspects.desktop
     ];
 

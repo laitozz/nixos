@@ -1,5 +1,5 @@
 {
-  den.aspects.packages = {
+  sw.packages = {
     nixos = { pkgs, ... }: {
       environment.systemPackages = with pkgs; [
         coreutils

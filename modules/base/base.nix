@@ -1,0 +1,8 @@
+{ sw, ... }: {
+  sw.base.includes = [
+    sw.packages
+    sw.dotfiles
+    sw.git
+    sw.fish
+  ];
+}

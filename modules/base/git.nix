@@ -1,5 +1,5 @@
-{ den, ... }: {
-  den.aspects.git = {
+{ sw, ... }: {
+  sw.git = {
     homeManager = { pkgs, ... }: {
       programs.gh.enable = true;
       programs.git = {
