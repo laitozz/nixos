@@ -10,26 +10,39 @@
           description = ''
             dotfiles path as a string
           '';
-          };
         };
+      };
 
-        # TODO: convert to a list and a function, flatten dotfiles structure (get rid of term/)
-        config = {
-          xdg.configFile.nvim.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/nvim";
-          xdg.configFile.wlogout.source = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/wlogout";
-          xdg.configFile.rofi.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/rofi";
-          xdg.configFile.tofi.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/tofi";
-          xdg.configFile.hypr.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/hypr";
-          xdg.configFile.wal.source     = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/wal";
-          xdg.configFile.sway.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/sway";
-          xdg.configFile.tmux.source    = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/tmux";
-          xdg.configFile.waybar.source  = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/waybar";
-          xdg.configFile.kitty.source   = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/kitty";
-          xdg.configFile.ghostty.source = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/ghostty";
-          home.file.".vimrc".source     = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/.vimrc";
-          home.file.".zshrc".source     = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/.zshrc";
-          home.file.".profile".source   = config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/.profile";
+      config = let
+        linkConfigFile = name: {
+          xdg.configFile.${name}.source =
+            config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/${name}";
         };
+        linkHomeFile = name: {
+          home.file."${name}".source =
+            config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/${name}";
+        };
+      in lib.mkMerge 
+      (
+        map linkConfigFile [
+          "nvim"
+          "wlogout"
+          "rofi"
+          "tofi"
+          "hypr"
+          "wal"
+          "sway"
+          "tmux"
+          "waybar"
+          "kitty"
+          "ghostty"
+        ] ++
+        map linkHomeFile [
+          ".vimrc"
+          ".zshrc"
+          ".profile"
+        ]
+      );
     };
   };
 }
