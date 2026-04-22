@@ -1,11 +1,10 @@
-{ den, ... }: {
+{ den, hw, ... }: {
   # host aspect
   den.aspects.onix = {
 
-    # host provides default home environment for its users
-    provides.to-users.homeManager = { pkgs, ... }: {
-      home.packages = [ ];
-    };
+    includes = [
+      hw.nvidia
+    ];
 
     # host NixOS configuration
     nixos = { config, lib, pkgs, modulesPath, ... }: {
