@@ -40,7 +40,6 @@
         csharp-ls
         clang-tools
         gdb
-        alejandra
       ];
       programs.zsh.enable = true;
 

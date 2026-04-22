@@ -1,3 +1,12 @@
+## Configuration layout
+* Configuration is seperated to two namespaces:
+    * Hardware (hw)
+        * Configured on host level
+    * Software (sw)
+        * Configured per user
+        * Provides bundles: sw.base and sw.desktop
+
+
 ## Possible configuration pipelines
 #### define host specific options in hosts.nix
 * Use den.schema for defining options
@@ -16,9 +25,9 @@
     * And what should be selectable by including aspects
 
 ## TODO:
-* Enable namespaces, either: 
-    * desktop (dt) and base (bs)
-    * all in (eg) or __(sw)__
+* __Reorganise__ everything so that only two configuration sets remain
+    * Full for a full hyprland desktop with all config
+    * Minimal for a small sway based setup with low disk usage
 * Syncthing
 * Comma
 * Secrets (agenix?)
