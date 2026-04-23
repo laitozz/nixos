@@ -1,26 +1,16 @@
-{ sw, ... }: {
+{
   sw.dotfiles = { 
     homeManager = { lib, config, pkgs, ... }: { 
       
-      # TODO: do this the den way
-      options = {
-        my.dotfiles.path = lib.mkOption {
-          type = lib.types.path;
-          default = "${config.home.homeDirectory}/dotfiles/";
-          description = ''
-            dotfiles path as a string
-          '';
-        };
-      };
-
       config = let
+        dotfilePath = "${config.home.homeDirectory}/dotfiles/";
         linkConfigFile = name: {
           xdg.configFile.${name}.source =
-            config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/${name}";
+            config.lib.file.mkOutOfStoreSymlink "${dotfilePath}/${name}";
         };
         linkHomeFile = name: {
           home.file."${name}".source =
-            config.lib.file.mkOutOfStoreSymlink "${config.my.dotfiles.path}/${name}";
+            config.lib.file.mkOutOfStoreSymlink "${dotfilePath}/${name}";
         };
       in lib.mkMerge 
       (
