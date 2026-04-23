@@ -4,5 +4,6 @@
     sw.dotfiles
     sw.git
     sw.fish
+    sw.comma
   ];
 }
