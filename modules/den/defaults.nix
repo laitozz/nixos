@@ -8,6 +8,9 @@
   # host<->user provides
   den.ctx.user.includes = [ den._.mutual-provider ];
 
+  # Sets the system hostname as defined in den.hosts.<name>.hostName
+  den.default.includes = [ den.provides.hostname ];
+
   # Home manager options
   den.ctx.hm-host.includes = [
     {
