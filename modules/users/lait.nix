@@ -7,15 +7,6 @@
       sw.desktop
     ];
 
-    # To every host that has user 'lait'
-    # Currently used for hardware config
-    provides.to-hosts.includes = [
-      hw.wifi
-      hw.bluetooth
-      hw.power
-      hw.grub
-    ];
-
     user = { pkgs, ... }: {
       initialPassword = "ok";
       shell = pkgs.fish;
