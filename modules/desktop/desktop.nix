@@ -18,6 +18,8 @@
         rofi
         fuzzel
         tofi
+		
+        ncspot
       ];
       programs.sway.enable = true;
     };

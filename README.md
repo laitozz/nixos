@@ -29,9 +29,7 @@
     * Full for a full hyprland desktop with all config
     * Minimal for a small sway based setup with low disk usage
 * Syncthing
-* Comma
 * Secrets (agenix?)
 * Disk ISO (laitOS)
 * Emacs (doom flake?)
-* Ncspot with nix (secrets?)
-* Flake parts 
+* Hyprland cursor
