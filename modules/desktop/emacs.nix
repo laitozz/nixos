@@ -9,6 +9,7 @@
       ripgrep
       fd
       cmake
+      ispell # org mode
       
       # Install script
       (pkgs.writeShellScriptBin "doomEmacsInstallScript" ''
