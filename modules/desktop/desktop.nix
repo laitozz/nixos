@@ -4,6 +4,7 @@
       sw.hyprland
       sw.noctalia
       sw.ly
+      sw.emacs
     ];
     # Here goes a minimal sway-based config
     provides.minimal.includes = [

@@ -25,11 +25,8 @@
     * And what should be selectable by including aspects
 
 ## TODO:
-* __Reorganise__ everything so that only two configuration sets remain
-    * Full for a full hyprland desktop with all config
-    * Minimal for a small sway based setup with low disk usage
 * Syncthing
 * Secrets (agenix?)
 * Disk ISO (laitOS)
-* Emacs (doom flake?)
 * Hyprland cursor
+* Direnv stuff
