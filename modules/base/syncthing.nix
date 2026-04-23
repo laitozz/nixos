@@ -6,8 +6,8 @@
         openDefaultPorts = true;
         user = user.name;
         dataDir = "/home/${user.name}";
-        overrideFolders = true;
-        overrideDevices = true;
+        overrideFolders = false;
+        overrideDevices = false;
         # TODO: set default user and password with sops-nix
         settings = {
           devices = {
