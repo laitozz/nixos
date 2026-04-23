@@ -11,9 +11,9 @@
         # TODO: set default user and password with sops-nix
         settings = {
           devices = {
-            "onix" = { id = "6I7HXSC-TPKCWOA-QPAYBZX-QRUTEZH-E4A6E3I-ICMMRP3-TVGI3EQ-GYVBGQN"; };
+            "onix" = { id = "UEVQTKY-34ZQBJO-Z4DTM2K-M2QO5A5-UA5AUL4-3NQ5CPU-O2Y3HOL-DLWQKQO"; };
             # "fenix" = { id = ""; };
-            # "nord" = { id = ""; };
+            "nord" = { id = "QNTINZC-OZDSEQM-P6LR362-5CELMLB-DTVI7KH-UDQPQGU-T4LMRQV-Q6TPGQZ"; };
           };
           folders = {
             "Notes" = {
