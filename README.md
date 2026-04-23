@@ -29,4 +29,3 @@
 * Secrets (agenix?)
 * Disk ISO (laitOS)
 * Hyprland cursor
-* Direnv stuff

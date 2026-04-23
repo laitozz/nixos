@@ -5,5 +5,6 @@
     sw.git
     sw.fish
     sw.comma
+    sw.direnv
   ];
 }
