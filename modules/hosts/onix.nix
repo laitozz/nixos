@@ -2,23 +2,26 @@
   # host aspect
   den.aspects.onix = {
 
+    # Included hardware modules
     includes = [
+      hw.wifi
+      hw.bluetooth
+      hw.power
+      hw.grub
       hw.nvidia
     ];
 
-    # host NixOS configuration
+    # Hardware config 
     nixos = { config, lib, pkgs, modulesPath, ... }: {
       
       # TODO: do this automatically for each host (with den.ctx?)
       environment.sessionVariables.NH_FLAKE = "$HOME/dotfiles/nixos#onix";
 
-      # Hardware config 
       imports = [
         (modulesPath + "/installer/scan/not-detected.nix")
       ];
       
       # Force unset grub timeout
-      # TODO: do this in the grub.nix file selectively
       boot.loader.timeout = lib.mkForce null;
 
       boot.initrd.availableKernelModules = ["xhci_pci" "ahci" "nvme" "usb_storage" "usbhid" "sd_mod"];

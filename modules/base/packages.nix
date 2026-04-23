@@ -1,5 +1,5 @@
 {
-  den.aspects.packages = {
+  sw.packages = {
     nixos = { pkgs, ... }: {
       environment.systemPackages = with pkgs; [
         coreutils
@@ -40,7 +40,6 @@
         csharp-ls
         clang-tools
         gdb
-        alejandra
       ];
       programs.zsh.enable = true;
 

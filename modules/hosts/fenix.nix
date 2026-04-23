@@ -1,20 +1,21 @@
-{ den, ... }: {
+{ den, hw, ... }: {
   # host aspect
   den.aspects.fenix = {
 
-    # host provides default home environment for its users
-    provides.to-users.homeManager = { pkgs, ... }: {
-      home.packages = [ ];
-    };
+    # Included hardware modules
+    includes = [
+      hw.wifi
+      hw.bluetooth
+      hw.power
+      hw.grub
+    ];
 
-    # host NixOS configuration
+    # Hardware config 
     nixos = { config, lib, pkgs, modulesPath, ... }: {
       
       # TODO: do this automatically for each host (with den.ctx?)
       environment.sessionVariables.NH_FLAKE = "$HOME/dotfiles/nixos#fenix";
 
-      # Hardware config 
-      # TODO: find a way to seperate from rest of host config?
       imports =
         [ (modulesPath + "/installer/scan/not-detected.nix")
         ];

@@ -1,5 +1,5 @@
-{ den, ... }: {
-  den.aspects.dotfiles = { 
+{ sw, ... }: {
+  sw.dotfiles = { 
     homeManager = { lib, config, pkgs, ... }: { 
       
       # TODO: do this the den way
