@@ -6,5 +6,6 @@
     sw.fish
     sw.comma
     sw.direnv
+    sw.syncthing
   ];
 }

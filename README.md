@@ -26,6 +26,7 @@
 
 ## TODO:
 * Syncthing
-* Secrets (agenix?)
+* Secrets (sops-nix)
+    * Figure out ssh keys first haha
 * Disk ISO (laitOS)
 * Hyprland cursor
