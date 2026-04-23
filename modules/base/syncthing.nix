@@ -18,11 +18,15 @@
           folders = {
             "Notes" = {
               path = "~/notes";
-              devices = [ "onix" ];
+              devices = [ "onix" "fenix" "nord" ];
             };
             "Org" = {
               path = "~/org";
-              devices = [ "onix" ];
+              devices = [ "onix" "fenix" "nord" ];
+            };
+            "Projects" = {
+              path = "~/projects";
+              devices = [ "onix" "fenix" ];
             };
           };
         };
