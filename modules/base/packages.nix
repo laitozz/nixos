@@ -5,6 +5,7 @@
         coreutils
         libtool
         gcc
+        unzip
         git
         vim
         neovim
