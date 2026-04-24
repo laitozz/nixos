@@ -13,15 +13,15 @@
         wlogout
         awww
         pywal
+        # Screenshots
         grim
         slurp
+        # Notification deamon
         mako
+        # Clipboard
+        wl-clipboard
+        cliphist
       ];
-      # autostart Hyprland
-      # environment.loginShellInit = ''
-      #   [[ "$(tty)" == /dev/tty1 ]] && exec start-hyprland
-      # '';
-
       # Force apps to use wayland when possible
       environment.sessionVariables = {
         NIXOS_OZONE_WL = "1";
