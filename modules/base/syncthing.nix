@@ -24,10 +24,6 @@
               path = "~/org";
               devices = [ "onix" "fenix" "nord" ];
             };
-            "Projects" = {
-              path = "~/projects";
-              devices = [ "onix" "fenix" ];
-            };
           };
         };
       };
