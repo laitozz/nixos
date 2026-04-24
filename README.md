@@ -30,3 +30,6 @@
     * Figure out ssh keys first haha
 * Disk ISO (laitOS)
 * Hyprland cursor
+
+## Personal notes
+* Building iosevka takes an hour, so __don't__ do it

@@ -43,12 +43,6 @@
         gdb
       ];
       programs.zsh.enable = true;
-
-      fonts.packages = with pkgs; [
-        nerd-fonts.jetbrains-mono
-        nerd-fonts.iosevka
-        nerd-fonts.fira-code
-      ];
     };
   };
 }
