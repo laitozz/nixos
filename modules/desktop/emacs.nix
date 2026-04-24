@@ -2,7 +2,7 @@
   sw.emacs.nixos = { pkgs, ... }: {
     services.emacs.enable = true;
     # dependencies
-    fonts.fonts = with pkgs; [
+    fonts.packages = with pkgs; [
       # symbola # UNFREE
     ];
     environment.systemPackages = with pkgs; [
