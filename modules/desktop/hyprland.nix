@@ -10,6 +10,8 @@
         waybar
         hyprpaper
         hyprlock
+        hyprcursor
+        hyprsunset
         wlogout
         awww
         pywal
@@ -29,3 +31,5 @@
     };
   };
 }
+# TODO: set hyprland cursor with hyprcursor or preferably gtk
+# https://wiki.hypr.land/0.41.0/Nix/Hyprland-on-Home-Manager/#fixing-problems-with-themes
