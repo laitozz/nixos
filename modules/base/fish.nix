@@ -86,6 +86,12 @@
             set token (string replace -r \t'.*' ''' -- $token)
             commandline -rt "$token"
           '';
+          remove_path = ''
+            if set -l index (contains -i "$argv" $fish_user_paths)
+              set -e fish_user_paths[$index]
+              echo 'Removed $argv from $fish_user_paths'
+            end
+          '';
         };
         interactiveShellInit = ''
           if command -q fd
@@ -103,6 +109,9 @@
           # set -gx PAGER "nvim +Man!" # extremely slow
           # set -gx MANWIDTH 999
           set -q nvm_default_version; or set -U nvm_default_version latest
+
+          # TODO: do this on path per function call with a loop and a list of paths
+          # Because this skips the rest if one path is empty
           fish_add_path $HOME/.cargo/bin $HOME/.local/share/bob/nvim-bin $HOME/.cabal/bin $HOME/.ghcup/bin $HOME/.local/bin $home/.config/emacs/bin
 
           if command -q direnv
