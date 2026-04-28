@@ -1,13 +1,16 @@
 { hw, ... }: {
   hw.keyd.nixos = { pkgs, ... }: {
-    # FIXME: keyd complains about a group and no permissions
+    # NOTE: sudo keyd monitor for ids
     environment.systemPackages = [ pkgs.keyd ];
     # TODO: do not apply for custom keyboard
     services.keyd = {
       enable = true;
       keyboards = {
         default = {
-          ids = [ "*" ]; # what goes into the [id] section, here we select all keyboards
+          ids = [
+            "*" # Apply to everything
+            "0001:0001:09b4e68d" # Fenix laptop keyboard, for reference
+          ]; 
           settings = {
             main = {
               capslock = "overload(control, esc)";
