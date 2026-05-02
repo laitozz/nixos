@@ -17,5 +17,6 @@
     sw.ly
     sw.emacs
     sw.gaming
+    # sw.nextcloud # TODO: move to server
   ];
 }
