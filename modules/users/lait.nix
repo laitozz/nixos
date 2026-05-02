@@ -3,7 +3,6 @@
     includes = [
       den.provides.define-user
       den.provides.primary-user
-      sw.full
     ];
 
     user = { pkgs, ... }: {
