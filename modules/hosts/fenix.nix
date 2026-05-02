@@ -1,6 +1,9 @@
-{ den, hw, ... }: {
+{ sw, hw, ... }: {
   # host aspect
   den.aspects.fenix = {
+
+    # Which software modules to use
+    provides.to-users.includes = [ sw.templates._.full ];
 
     # Included hardware modules
     includes = [
