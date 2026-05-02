@@ -1,9 +1,9 @@
 { sw, ... }: {
   sw.hyprland = {
     nixos = { pkgs, ... }: {
-
       programs.hyprland = {
         enable = true;
+        xwayland.enable = true;
       };
       # Packages useful with hyprland
       environment.systemPackages = with pkgs; [
