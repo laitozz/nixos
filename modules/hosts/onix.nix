@@ -3,7 +3,7 @@
   den.aspects.onix = {
 
     # Which software modules to use
-    provides.to-users.includes = [ sw.full ];
+    provides.to-users.includes = [ sw.templates._.full ];
 
     # Included hardware modules
     includes = [
