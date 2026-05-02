@@ -16,6 +16,7 @@
       (
         map linkConfigFile [
           "nvim"
+          "doom"
           "wlogout"
           "rofi"
           "tofi"
