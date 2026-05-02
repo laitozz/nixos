@@ -16,7 +16,6 @@
     # user can provide NixOS configurations
     # to any host it is included on
     provides.to-hosts.nixos = { pkgs, ... }: {
-      # TODO: move this somewhere
       time.timeZone = "Europe/Helsinki";
       time.hardwareClockInLocalTime = true;
     };

@@ -1,6 +1,7 @@
-{ sw, ... }: {
+{
   sw.desktop = {
     nixos = { pkgs, ... }: {
+      # Desktop packages
       environment.systemPackages = with pkgs; [
         firefox
         kitty
