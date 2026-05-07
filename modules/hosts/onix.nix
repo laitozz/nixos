@@ -12,6 +12,7 @@
       hw.power
       hw.grub
       hw.qmk
+      hw.keyd
       hw.nvidia
     ];
 
