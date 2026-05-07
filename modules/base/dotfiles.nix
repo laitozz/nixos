@@ -27,6 +27,7 @@
           "waybar"
           "kitty"
           "ghostty"
+          "matugen"
         ] ++
         map linkHomeFile [
           ".vimrc"
