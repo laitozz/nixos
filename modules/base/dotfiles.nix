@@ -15,19 +15,20 @@
       in lib.mkMerge 
       (
         map linkConfigFile [
+          "wal"
           "nvim"
           "doom"
-          "wlogout"
           "rofi"
           "tofi"
           "hypr"
-          "wal"
           "sway"
           "tmux"
-          "waybar"
           "kitty"
+          "waybar"
+          "wlogout"
           "ghostty"
           "matugen"
+          "noctalia"
         ] ++
         map linkHomeFile [
           ".vimrc"
