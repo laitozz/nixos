@@ -1,6 +1,7 @@
 { sw, ... }: {
   sw.fish = {
     nixos.programs.fish.enable = true; # needed for completions
+    nixos.programs.zoxide.enable = true;
     homeManager = { config, pkgs, lib, ... }: {
       programs.fish = {
         enable = true;
@@ -22,7 +23,6 @@
             "hydro"
             "fzf"
             "autopair"
-            "z"
           ]
         );
         functions = {
