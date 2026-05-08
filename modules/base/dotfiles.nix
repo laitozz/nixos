@@ -27,6 +27,7 @@
           "waybar"
           "wlogout"
           "ghostty"
+          "lazygit"
           "matugen"
           "noctalia"
         ] ++
