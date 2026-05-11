@@ -41,6 +41,8 @@
         csharp-ls
         clang-tools
         gdb
+
+        tree-sitter
       ];
       programs.zsh.enable = true;
     };
