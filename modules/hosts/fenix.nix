@@ -13,6 +13,7 @@
       hw.grub
       hw.qmk
       hw.keyd
+      hw.zswap
     ];
 
     # Hardware config 
@@ -29,6 +30,8 @@
       boot.initrd.kernelModules = [ ];
       boot.kernelModules = [ "kvm-amd" ];
       boot.extraModulePackages = [ ];
+
+      boot.resumeDevice = "/dev/disk/by-partlabel/swappart";
 
       fileSystems."/" =
         { device = "/dev/disk/by-partlabel/nixpart";
