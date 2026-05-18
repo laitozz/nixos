@@ -14,6 +14,7 @@
         ncspot
       ];
       programs.sway.enable = true;
+      programs.kdeconnect.enable = true;
     };
   };
 }
