@@ -20,4 +20,7 @@
     sw.matugen
     # sw.nextcloud # TODO: move to server
   ];
+  sw.templates._.extra.includes = [
+    sw.minecraft
+  ];
 }
