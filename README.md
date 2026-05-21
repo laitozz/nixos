@@ -33,3 +33,6 @@
 
 ## Personal notes
 * Building iosevka takes an hour, so __don't__ do it
+* Do not pin nixpkgs on packages with binary caches
+    * Will cause cache misses
+    * https://www.reddit.com/r/NixOS/comments/1hhizxa/how_to_correctly_use_inputsfollows/

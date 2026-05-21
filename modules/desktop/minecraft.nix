@@ -5,7 +5,8 @@
   flake-file.inputs = {
     freesmlauncher = {
       url = "github:FreesmTeam/FreesmLauncher";
-      inputs.nixpkgs.follows = "nixpkgs";
+      # NOTE: pinning will break binary cache
+      # inputs.nixpkgs.follows = "nixpkgs";
     };
   };
   sw.minecraft.nixos = { pkgs, freesmlauncher, system, ... }: {
