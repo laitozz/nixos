@@ -10,6 +10,7 @@
         rofi
         fuzzel
         tofi
+        anyrun # TODO: dotfiles for this
 		
         ncspot
       ];
