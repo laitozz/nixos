@@ -17,6 +17,7 @@
         iwd
         nh
         yazi
+        btop
 
         ripgrep
         fd
