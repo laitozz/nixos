@@ -9,6 +9,7 @@
     sw.direnv
     sw.ssh
     sw.syncthing
+    sw.wireguard
     sw.sops
   ];
   sw.templates._.full.includes = [
