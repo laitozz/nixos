@@ -8,6 +8,7 @@
     sw.comma
     sw.direnv
     sw.syncthing
+    sw.sops
   ];
   sw.templates._.full.includes = [
     sw.templates._.base
