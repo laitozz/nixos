@@ -10,10 +10,7 @@
       url = "github:hercules-ci/flake-parts";
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
-    freesmlauncher = {
-      url = "github:FreesmTeam/FreesmLauncher";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    freesmlauncher.url = "github:FreesmTeam/FreesmLauncher";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -24,5 +21,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz";
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 }
