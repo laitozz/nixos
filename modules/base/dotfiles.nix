@@ -30,6 +30,7 @@
           "lazygit"
           "matugen"
           "noctalia"
+          "qutebrowser"
         ] ++
         map linkHomeFile [
           ".vimrc"

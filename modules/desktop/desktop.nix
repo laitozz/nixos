@@ -13,6 +13,9 @@
         anyrun # TODO: dotfiles for this
 		
         ncspot
+        qutebrowser
+        mpv
+        yt-dlp
       ];
       programs.sway.enable = true;
       programs.kdeconnect.enable = true;
