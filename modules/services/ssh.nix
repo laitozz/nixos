@@ -5,5 +5,6 @@
       UseDns = true;
       PasswordAuthentication = false;
     };
+    programs.mosh.enable = true;
   };
 }
