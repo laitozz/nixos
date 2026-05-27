@@ -3,7 +3,9 @@
     services.openssh.enable = true;
     services.openssh.settings = {
       UseDns = true;
-      PasswordAuthentication = false;
+      PasswordAuthentication = true; # TODO: disable!!
+      KbdInteractiveAuthentication = false;
+      PermitRootLogin = "no";
     };
     programs.mosh.enable = true;
   };
