@@ -10,6 +10,7 @@
           ns = "nix-shell --run fish";
           dev = "nix develop";
           lazyvim = "NVIM_APPNAME=lazyvim nvim";
+          mann = "MANPAGER='nvim +Man!' man";
         };
         plugins = (
           map 
