@@ -13,6 +13,7 @@
         anyrun # TODO: dotfiles for this
 		
         ncspot
+        neovide
         qutebrowser
         mpv
         yt-dlp
