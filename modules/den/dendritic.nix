@@ -7,6 +7,7 @@
   # other inputs may be defined at a module using them.
   # regenerate flake.nix with nix run .#write-flake
   flake-file.inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     den.url = "github:vic/den";
     flake-file.url = "github:vic/flake-file";
     home-manager = {
