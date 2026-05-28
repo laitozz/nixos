@@ -1,13 +1,10 @@
 {
   sw.emacs.nixos = { pkgs, ... }: {
-    # NOTE: automatically starts emacs daemon
-    # TODO: Use exec-once emacs --daemon instead
-    services.emacs.enable = true;
-    # dependencies
     fonts.packages = with pkgs; [
       # symbola # UNFREE
     ];
     environment.systemPackages = with pkgs; [
+      emacs
       ripgrep
       fd
       cmake
