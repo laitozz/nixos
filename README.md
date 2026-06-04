@@ -25,11 +25,8 @@
     * And what should be selectable by including aspects
 
 ## TODO:
-* Syncthing
-* Secrets (sops-nix)
-    * Figure out ssh keys first haha
+* Move some packages to "dev" directory
 * Disk ISO (laitOS)
-* Hyprland cursor
 
 ## Personal notes
 * Building iosevka takes an hour, so __don't__ do it
