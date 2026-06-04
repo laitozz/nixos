@@ -14,6 +14,7 @@
   ];
   sw.templates._.full.includes = [
     sw.templates._.base
+    sw.templates._.dev
     sw.desktop
     sw.hyprland
     sw.noctalia
@@ -22,6 +23,9 @@
     sw.gaming
     sw.matugen
     # sw.nextcloud # TODO: move to server
+  ];
+  sw.templates._.dev.includes = [
+    sw.dev
   ];
   sw.templates._.extra.includes = [
     sw.minecraft # Broken?
