@@ -22,6 +22,7 @@
     sw.emacs
     sw.gaming
     sw.matugen
+    sw.searxng
     # sw.nextcloud # TODO: move to server
   ];
   sw.templates._.dev.includes = [
