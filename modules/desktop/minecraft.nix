@@ -11,13 +11,19 @@
   };
   sw.minecraft.nixos = { pkgs, freesmlauncher, system, ... }: {
     environment.systemPackages = with pkgs; [
-      inputs.freesmlauncher.packages."x86_64-linux".freesmlauncher
+      # inputs.freesmlauncher.packages."x86_64-linux".freesmlauncher
+      # NOTE: build seems broken currently
+      # So i'm installing deps with prism and running freesm with comma
+      prismlauncher
     ];
     # NOTE: use nixos-firewall-tool instead
     networking.firewall.allowedTCPPorts = [ 6767 ];
     # Use cache for rebuilds
     # TODO: move to nixconfig.nix
     nix.settings.substituters = [
+      "https://cache.garnix.io"
+    ];
+    nix.settings.trusted-substituters = [
       "https://cache.garnix.io"
     ];
     nix.settings.trusted-public-keys = [
