@@ -29,6 +29,7 @@
           "ghostty"
           "lazygit"
           "matugen"
+          "searxng"
           "noctalia"
           "qutebrowser"
         ] ++

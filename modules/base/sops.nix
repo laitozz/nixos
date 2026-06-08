@@ -21,5 +21,6 @@
     sops.age.generateKey = true;
     # Secrets
     sops.secrets."wireguard/home-router" = { };
+    sops.secrets."searx" = { };
   };
 }
