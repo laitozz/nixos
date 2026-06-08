@@ -39,7 +39,7 @@
 
         # Server configuration
         server = {
-          base_url = "https://search.example.com";
+          # base_url = "localhost:8888";
           port = 8888;
           bind_address = "127.0.0.1";
           secret_key = config.sops.secrets.searx.path;
@@ -68,15 +68,15 @@
           "curlie".disabled              = true;
           "ddg definitions".disabled     = false;
           "ddg definitions".weight       = 2;
-          "wikibooks".disabled           = false;
-          "wikidata".disabled            = false;
+          "wikibooks".disabled           = true;
+          "wikidata".disabled            = true;
           "wikiquote".disabled           = true;
           "wikisource".disabled          = true;
-          "wikispecies".disabled         = false;
+          "wikispecies".disabled         = true;
           "wikispecies".weight           = 0.5;
-          "wikiversity".disabled         = false;
+          "wikiversity".disabled         = true;
           "wikiversity".weight           = 0.5;
-          "wikivoyage".disabled          = false;
+          "wikivoyage".disabled          = true;
           "wikivoyage".weight            = 0.5;
           "currency".disabled            = true;
           "dictzone".disabled            = true;
