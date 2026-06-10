@@ -23,6 +23,7 @@
     sw.gaming
     sw.matugen
     sw.searxng
+    sw.docker
     # sw.nextcloud # TODO: move to server
   ];
   sw.templates._.dev.includes = [
