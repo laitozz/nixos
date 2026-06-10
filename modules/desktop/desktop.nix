@@ -5,6 +5,7 @@
       environment.systemPackages = with pkgs; [
         firefox
         kitty
+        ghostty
 
         wofi
         rofi
