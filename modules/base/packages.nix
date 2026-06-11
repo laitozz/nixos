@@ -31,19 +31,6 @@
         nix-index
         nix-inspect
         nix-fast-build
-
-        # LSPs
-        # NOTE: the combined size of these is over 2GB
-        # TODO: organice this, make optional
-        nil
-        nixd
-        bash-language-server
-        lua-language-server
-        csharp-ls
-        clang-tools
-        gdb
-
-        tree-sitter
       ];
       programs.zsh.enable = true;
     };

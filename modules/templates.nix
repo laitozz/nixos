@@ -6,7 +6,6 @@
     sw.fish
     sw.fonts
     sw.comma
-    sw.direnv
     sw.ssh
     sw.syncthing
     sw.wireguard

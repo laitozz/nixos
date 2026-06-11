@@ -115,10 +115,11 @@
           # Because this skips the rest if one path is empty
           fish_add_path $HOME/.cargo/bin $HOME/.local/share/bob/nvim-bin $HOME/.cabal/bin $HOME/.ghcup/bin $HOME/.local/bin $home/.config/emacs/bin
 
-          if command -q direnv
-            set -gx DIRENV_LOG_FORMAT ""
-            direnv hook fish | source
-          end
+          # TODO: remove these, direnv nixos setting does this?
+          # if command -q direnv
+          #   set -gx DIRENV_LOG_FORMAT ""
+          #   direnv hook fish | source
+          # end
         '';
       };
     };
