@@ -11,6 +11,7 @@
       gdb
 
       tree-sitter
+      nodejs # Needed for some treesitter parsers
 
       devenv
     ];
