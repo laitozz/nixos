@@ -26,6 +26,7 @@
           theme_args.simple_style = "dark";
           search_on_category_select = false;
           hotkeys = "vim";
+          results_on_new_tab = true;
         };
 
         # Search engine settings
@@ -40,7 +41,7 @@
         # Server configuration
         server = {
           # base_url = "localhost:8888";
-          port = 8888;
+          port = "8888";
           bind_address = "127.0.0.1";
           secret_key = config.sops.secrets.searx.path;
           limiter = false;
@@ -65,9 +66,7 @@
           # General
           "crowdview".disabled           = true;
           "crowdview".weight             = 0.5;
-          "curlie".disabled              = true;
           "ddg definitions".disabled     = false;
-          "ddg definitions".weight       = 2;
           "wikibooks".disabled           = true;
           "wikidata".disabled            = true;
           "wikiquote".disabled           = true;
@@ -124,13 +123,16 @@
           "nixos wiki".disabled          = false;
           "arch linux wiki".disabled     = false;
           "arch linux wiki".shortcut     = "aw";
-          "hackenews".disabled           = false;
+          "hackernews".disabled          = false;
 
           # Files
           "1337x".disabled               = false;
-          "pirate bay".disabled          = false;
+          "piratebay".disabled           = false;
           "apk mirror".disabled          = false;
           "fdroid".disabled              = false;
+          # Misc
+          "ahmia".inactive               = true;
+          "torch".inactive               = true;
         };
 
 			# Outgoing requests
