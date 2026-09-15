@@ -100,7 +100,7 @@
             export FZF_DEFAULT_COMMAND='fd -H -E .git .'
           end
 
-          bind \en 'nvim -c ":lua Snacks.picker.smart()"'
+          bind \en 'nvim -c "lua if vim.v.startreason == [[normal]] then Snacks.picker.smart() end"'
           bind \eg 'nvim -c ":lua Snacks.picker.grep()"'
           bind \ed 've'
           bind \eu 'fzf_complete; commandline -f repaint'
