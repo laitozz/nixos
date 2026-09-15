@@ -17,17 +17,6 @@
       prismlauncher
     ];
     # NOTE: use nixos-firewall-tool instead
-    networking.firewall.allowedTCPPorts = [ 6767 ];
-    # Use cache for rebuilds
-    # TODO: move to nixconfig.nix
-    nix.settings.substituters = [
-      "https://cache.garnix.io"
-    ];
-    nix.settings.trusted-substituters = [
-      "https://cache.garnix.io"
-    ];
-    nix.settings.trusted-public-keys = [
-      "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
-    ];
+    # networking.firewall.allowedTCPPorts = [ 6767 ];
   };
 }
