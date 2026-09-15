@@ -2,6 +2,7 @@
   sw.templates._.base.includes = [
     sw.packages
     sw.dotfiles
+    sw.neovim
     sw.git
     sw.fish
     sw.fonts

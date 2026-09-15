@@ -8,7 +8,6 @@
         unzip
         git
         vim
-        neovim
         helix
         gnumake
         lazygit
