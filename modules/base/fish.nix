@@ -11,6 +11,7 @@
           dev = "nix develop";
           lazyvim = "NVIM_APPNAME=lazyvim nvim";
           mann = "MANPAGER='nvim +Man!' man";
+          "s," = "sudo --preserve-env=NIX_INDEX_DATABASE ,";
         };
         plugins = (
           map 
