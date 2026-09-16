@@ -18,6 +18,9 @@
         yazi
         btop
 
+        python3
+        lua5_4
+
         ripgrep
         fd
         skim
