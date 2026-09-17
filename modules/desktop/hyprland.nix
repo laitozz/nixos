@@ -18,8 +18,9 @@
         # Screenshots
         grim
         slurp
-        # Notification deamon
+        # Notifications
         mako
+        libnotify
         # Clipboard
         wl-clipboard
         cliphist
