@@ -15,6 +15,8 @@
         wlogout
         awww
         pywal
+        wl-kbptr
+        wlrctl
         # Screenshots
         grim
         slurp
